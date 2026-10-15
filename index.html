@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoParts Hub | Car Parts Catalog</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect the JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Website header and navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">AutoParts Hub</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR TRUSTED AUTO PARTS STORE</p>
+
+                 <h1>Find the Right Parts for Your Ride</h1>
+
+                 <p>
+                 Discover quality automotive parts and accessories
+                 to keep your vehicle safe, reliable, and road-ready.
+                 </p>
+
+                 <a href="#products" class="btn">Browse Car Parts</a>
+            </div>
+        </section>
+
+        <!-- Products section -->
+        <section id="products" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">OUR COLLECTION</p>
+                <h2>Product Catalog</h2>
+                <p>Browse our products by category.</p>
+            </div>
+
+            <!-- Four category filter buttons -->
+            <div class="filter-buttons">
+                <button type="button" class="filter-btn active"
+                 data-category="all">All Parts</button>
+
+                <button type="button" class="filter-btn"
+                data-category="Engine">Engine Parts</button>
+
+                <button type="button" class="filter-btn"
+                data-category="Brakes">Brake Parts</button>
+
+                <button type="button" class="filter-btn"
+                data-category="Accessories">Accessories</button>
+            </div>
+
+            <!-- JavaScript will display products here -->
+            <div id="productGrid" class="product-grid">
+                <p>Loading products...</p>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">QUALITY AUTOMOTIVE COMPONENTS</p>
+                <h2>Our Car Parts</h2>
+                <p>Explore parts and accessories for your vehicle.</p>
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn submit-btn">
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Website footer -->
+    <footer class="footer">
+        <p>&copy; 2026 ProductHub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
